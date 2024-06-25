@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+li,a,button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252a;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.nav_links{
+    list-style: none;
+    margin-top: 10px;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #0088a9;
+}
+
+.navbutton{
+    padding: 9px 25px;
+    /* background-color: rgba(0, 136, 169, 1); */
+    background-color: white;
+    color: black;
+    width: 120px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 10px;
+}
+
+.navbutton:hover{
+    /* background-color: rgba(0, 136, 168, 0.8); */
+    background-color: #0088a9;
+    color: white;
+}
+
+/* judul apparel */
+
+.judulApparel {
+    font-family: "Montserrat", sans-serif;
+    background-image: url(apparel/bgfix.jpg);
+    padding: 200px;
+    color: white;
+}
+
+.judulApparel p {
+    margin-top: 30px;
+    letter-spacing: 3px;
+}
+
+/* kategori */
+.kategori {
+    list-style: none;
+    margin-left: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.kategori li {
+    display: inline-block;
+    padding: 0px 20px;
+    color: black;
+}
+
+.kategori li a {
+    transition: all 0.3s ease 0s;
+    color: black;
+}
+
+.kategori li a:hover {
+    color: #1bbae2;
+
+}
+
+/* accesories */
+.accesories {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+
+/* apparel */
+.apparel {
+    margin-top: 250px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.ap {
+    margin-bottom: 200px;
+}
+
+
+
+
+
+/* Footer */
+.wrapper {
+    text-align: right;
+}
+
+.wrapper .icon {
+    font-size: 40px;
+    display: inline-block;
+    color: white;
+}
+
+
+.footer {
+    background-color: #24252a;
+}
+
+.footer p {
+    color: white;
+}
+
+.row h4 {
+    color: white;
+}
+
+.wrapper h4 {
+    color: white;
+    margin-top: 30px;
+}
+
+.icon {
+    margin-bottom: 60px;
+    margin-right: 10px;
+}
+
+.icon a .tooltip {
+    display: none;
+    position: absolute;
+    bottom: -20px;
+    color: #fff;
+    padding: 6px 12px;
+  }
+
+
+.icon:hover {
+    color: #0088a9;
+}

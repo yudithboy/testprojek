@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="loginstyle.css">   
+     
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"></script>
+
+    <script>
+         function validasi (form)
+        {
+            if (form.user.value==""){
+                alert("Anda belum mengisikan username?");
+                form.user.focus(); 
+                return (false);
+            }
+
+            if (form.password.value==""){
+                alert("Anda belum mengisikan password?");
+                form.password.focus();
+                return (false);
+            }
+
+            if (form.retypepassword.value==""){
+                alert("Anda belum mengisikan ulang password?");
+                form.retypepassword.focus();
+                return (false);
+            }
+
+            if (form.retypepassword.value != form.password.value){
+                alert("Password yang anda inputkan tidak sama");
+                form.retypepassword.focus();
+                return (false);
+            }
+                return (true);
+        }
+    </script>
+
+</head>
+<body>
+    <header class="header">
+        <img class="logo" alt="logo" src="logo_login/logofix.png" width="125px">
+        <nav>
+          <ul class="nav_links">
+            <li><a href="index.html">Home</a></li>
+          <li><a href="partsfn.html">Parts</a></li>
+          <li><a href="apparel.html">Accessories & Apparel</a></li>
+          <li><a href="about.html">About Us</a></li>
+          </ul>
+        </nav>
+        <div class="Tombol">
+          <a class="cta" href="#"><button class="navbutton">Contact</button></a>
+          <a class="cta" href="Login.html"><button class="navbutton">Login</button></a>
+        </div>
+      </header>
+
+      
+    <main>
+        <div class="wrapperlog">
+            <form method="post" action="#" onSubmit="return validasi(this)">
+                  <h1>User Login</h1>
+                    <div class="input-box">
+                        <input type="text" placeholder="Username" name="user">
+                        <i class='bx bxs-user'></i>
+                    </div>
+    
+                    <div class="input-box">
+                        <input type="password" placeholder="Password" name="password">
+                        <i class='bx bxs-lock-alt' ></i>
+                    </div>
+    
+                    <div class="input-box">
+                        <input type="password" placeholder="Retype Password" name="retypepassword">
+                        <i class='bx bxs-lock-alt' ></i>
+                    </div>
+    
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot password?</a>
+                    </div>
+    
+                    <input type="submit" value="Login" class="tombollogin">
+    
+                    <div class="register-link">
+                        <p>Don't have an account? <a href="#">Register</a></p>
+                    </div>
+            </form>
+        </div>
+       
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h4>
+                &copy; 2024
+                <img class="logo" src="logo/logofix.png" alt="logo" width="160px" />
+              </h4>
+              <p>
+                Universitas Amikom Yogyakarta<br />
+                Jl. Ring Road Utara, Ngringin, Condongcatur <br />
+                Kec. Depok, Kabupaten Sleman <br />
+                Daerah Istimewa Yogyakarta 55281
+              </p>
+            </div>
+    
+            <div class="col-md-6">
+              <div class="wrapper">
+                <h4>Temukan Kami</h4>
+                <div class="icon">
+                  <a href="#" class="icon facebook">
+                    <div class="tooltip">Facebook</div>
+                    <span><i class="fab fa-facebook-f"></i></span>
+                  </a>
+                  <a href="#" class="icon instagram">
+                    <div class="tooltip">Instagram</div>
+                    <span><i class="fab fa-instagram"></i></span>
+                  </a>
+                  <a href="#" class="icon youtube">
+                    <div class="tooltip">Youtube</div>
+                    <span><i class="fab fa-youtube"></i></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+</body>
+</html>
+
+
